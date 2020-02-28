@@ -9,6 +9,8 @@ import { NuevaReparacionComponent } from './reparaciones/nueva-reparacion/nueva-
 import { DashboardReparacionComponent } from './reparaciones/dashboard-reparacion/dashboard-reparacion.component';
 import { EditarReparacionComponent } from './reparaciones/editar-reparacion/editar-reparacion.component';
 import { DetalleReparacionComponent } from './reparaciones/detalle-reparacion/detalle-reparacion.component';
+import { ReparacionService } from './reparaciones/reparacion.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,12 @@ import { DetalleReparacionComponent } from './reparaciones/detalle-reparacion/de
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ReparacionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

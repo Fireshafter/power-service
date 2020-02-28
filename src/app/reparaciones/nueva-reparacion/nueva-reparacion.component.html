@@ -1,1 +1,8 @@
-<p>nueva-reparacion works!</p>
+<h3>Componente nueva reparación</h3>
+
+<form [formGroup]="nuevaReparacion">
+    <input type="text" formControlName="dispositivo" required="required" placeholder="dispositivo">
+    <input type="text" formControlName="servicio" required="required" placeholder="servicio">
+    <input type="text" formControlName="descripcion" required="required" placeholder="descripcion">
+    <button type="submit" (click)="generar()">Enviar</button>
+</form>
