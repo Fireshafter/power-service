@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard-reparacion',
@@ -9,8 +10,12 @@ export class DashboardReparacionComponent implements OnInit {
 
   @Input() resguardos;
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {}
+
+  verDetalle(id: number){
+    this._router.navigate(['reparaciones/detalles', {id: id}])
+  }
 
 }
