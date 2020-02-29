@@ -1,1 +1,5 @@
-<p>dashboard-reparacion works!</p>
+<h3>Componente Dashboard</h3>
+
+<div style="font-size: small;" *ngFor="let resguardo of resguardos">
+    {{resguardo._id}} - {{resguardo.orden}} - {{resguardo.cliente.nombre | json}} - {{resguardo.lastedit | date:'medium'}} - {{resguardo.dispositivo}} - {{resguardo.servicio}} - {{resguardo.descripcion}}
+</div>

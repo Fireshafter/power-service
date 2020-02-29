@@ -1,8 +1,8 @@
 <h3>Componente nueva reparación</h3>
 
-<form [formGroup]="nuevaReparacion">
-    <input type="text" formControlName="dispositivo" required="required" placeholder="dispositivo">
-    <input type="text" formControlName="servicio" required="required" placeholder="servicio">
-    <input type="text" formControlName="descripcion" required="required" placeholder="descripcion">
+<form [formGroup]="dispositivo">
+    <input type="text" formControlName="nombre" required="required" placeholder="dispositivo">
+    <input type="text" formControlName="marca" required="required" placeholder="marca">
+    <input type="text" formControlName="estado" required="required" placeholder="estado">
     <button type="submit" (click)="generar()">Enviar</button>
 </form>
